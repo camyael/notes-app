@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLES */
+:root {
+  --background-color: #F9F7F6;
+  --orange-color: #FE8E5C;
+  --yellow-color: #FCDB67;
+  --pink-color: #F4BFC9;
+  --lightblue-color: #D9EEF3;
+  --green-color: #B8DEB7;
+  --darkblue-color: #19224D;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Inter', sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+}
+
+.navbar-menu a {
+  color: #9B9B9B;
+  text-decoration: none;
+  margin: 0 30px;
+  font-size: 16px;
+}
+
+.navbar-menu a:nth-child(4) {
+  background-color: var(--orange-color);
+  color: var(--background-color);
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
