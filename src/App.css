@@ -28,6 +28,10 @@ body {
   padding: 15px 60px;
 }
 
+.navbar-logo img {
+  width: 270px;
+}
+
 .navbar-menu a {
   color: #9B9B9B;
   text-decoration: none;

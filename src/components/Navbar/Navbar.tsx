@@ -1,7 +1,11 @@
+import logo from "../../assets/logo/Logo_color.svg"
+
 const Navbar = () => {
     return (
         <header id="navbar">
-            <h1>Sunny Thoughts</h1>
+            <div className="navbar-logo">
+                <img src={logo} alt=""/>
+            </div>
             <nav className="navbar-menu">
                 <a href="#">Servicio</a>
                 <a href="#">Nosotros</a>
