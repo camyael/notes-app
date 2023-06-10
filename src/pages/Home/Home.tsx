@@ -1,9 +1,11 @@
+import { LandingPage, WhatToDo, WhyChooseUs } from "../../components/index";
+
 const Home = () => {
     return (
         <section id="home">
-            <div className="home-landing-page">
-                <p>Home</p>
-            </div>
+            <LandingPage/>
+            <WhatToDo/>
+            <WhyChooseUs/>
         </section>
     )
 }
