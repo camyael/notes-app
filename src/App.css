@@ -237,11 +237,11 @@ body {
   color: #494949;
   font-size: 1rem;
   padding: 16px 36px;
+  transition-duration: 0.7s;
 }
 
 .whyChooseUs-cards > .whyChooseUs-card:hover {
   background-color: var(--green-color);
-  transition-duration: 0.7s;
 }
 
 .whyChooseUs-card > .whyChooseUs-card-recommendation {
@@ -265,4 +265,48 @@ body {
 .whyChooseUs-card > .whyChooseUs-card-score {
   text-align: end;
   font-size: 1.2rem;
+}
+
+#landing-page-newsletter {
+  margin-top: 284px;
+  background-color: var(--lightblue-color);
+  padding: 106px 252px;
+  text-align: center;
+}
+
+#landing-page-newsletter h2, #landing-page-newsletter p {
+  font-family: var(--font-secondary);
+  color: var(--darkblue-color);
+  margin: 0 auto 28px auto;
+  width: 719px;
+}
+
+#landing-page-newsletter h2 {
+  font-size: 2.75rem;
+}
+
+#landing-page-newsletter p {
+  font-size: 1.4rem;
+}
+
+#landing-page-newsletter form .newsletter-input, #landing-page-newsletter form .newsletter-submit {
+  font-family: var(--font-primary);
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 14px;
+}
+
+#landing-page-newsletter form .newsletter-input {
+  margin-right: 25px;
+  color: #BBBBBB;
+  padding: 10px 0 10px 19px;
+  width: 540px;
+}
+
+#landing-page-newsletter form .newsletter-submit {
+  background-color: var(--darkblue-color);
+  color: var(--background-color);
+  padding: 10px 20px;
+  font-weight: 600;
 }

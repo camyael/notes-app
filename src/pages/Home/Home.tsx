@@ -1,4 +1,4 @@
-import { LandingPage, WhatToDo, WhyChooseUs } from "../../components/index";
+import { Footer, LandingPage, Newsletter, WhatToDo, WhyChooseUs } from "../../components/index";
 
 const Home = () => {
     return (
@@ -6,6 +6,8 @@ const Home = () => {
             <LandingPage/>
             <WhatToDo/>
             <WhyChooseUs/>
+            <Newsletter/>
+            <Footer />
         </section>
     )
 }
