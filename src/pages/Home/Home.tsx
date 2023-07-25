@@ -1,4 +1,4 @@
-import { Footer, LandingPage, Newsletter, WhatToDo, WhyChooseUs } from "../../components/index";
+import { LandingPage, Newsletter, WhatToDo, WhyChooseUs } from "../../components/index";
 
 const Home = () => {
     return (
