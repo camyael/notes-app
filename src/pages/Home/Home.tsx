@@ -7,7 +7,6 @@ const Home = () => {
             <WhatToDo/>
             <WhyChooseUs/>
             <Newsletter/>
-            <Footer />
         </section>
     )
 }

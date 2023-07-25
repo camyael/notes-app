@@ -39,8 +39,16 @@ body {
 .navbar-menu a {
   color: #9B9B9B;
   text-decoration: none;
-  margin: 0 30px;
+  margin: 0 10px;
   font-size: 16px;
+  transition: .3s all ease;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.navbar-menu a:hover {
+  color: var(--darkblue-color);
+  background-color: var(--lightblue-color);
 }
 
 .navbar-menu a:nth-child(4) {
@@ -48,7 +56,11 @@ body {
   color: var(--background-color);
   font-weight: 600;
   padding: 10px 30px;
-  border-radius: 10px;
+  transition: .3s all ease;
+}
+
+.navbar-menu a:nth-child(4):hover {
+  background-color: #cd5f4b;
 }
 
 /* HOME */
@@ -158,9 +170,9 @@ body {
 
 .landing-page-todo > .todo-cards {
   display: flex;
-  justify-content: center;
-  column-gap: 61px;
-  margin-top: 65px;
+  justify-content: space-between;
+  width: 80%;
+  margin: 65px auto 0;
 }
 
 .todo-cards > .todo-cards-card {
@@ -222,8 +234,9 @@ body {
   flex-flow: row nowrap;
   overflow-x: auto;
   column-gap: 70px;
-  margin: 42px 0 0 100px;
+  margin: 42px auto 0;
   padding-bottom: 42px;
+  width: 80%;
 }
 
 .whyChooseUs-cards > .whyChooseUs-card {
@@ -294,7 +307,7 @@ body {
   outline: none;
   border: none;
   font-size: 1.1rem;
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
 #landing-page-newsletter form .newsletter-input {
@@ -307,6 +320,64 @@ body {
 #landing-page-newsletter form .newsletter-submit {
   background-color: var(--darkblue-color);
   color: var(--background-color);
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-weight: 600;
+  transition: .3s all ease;
+  cursor: pointer;
+}
+
+#landing-page-newsletter form .newsletter-submit:hover {
+  background-color: #515979;
+}
+
+#footer {
+  background-color: var(--darkblue-color);
+  color: #fff;
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer .footer-logo img{
+  width: 270px;
+}
+
+#footer ul li {
+  list-style: none;
+}
+
+#footer p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+#footer .footer-policies ul li {
+  margin-bottom: 14px;
+}
+
+#footer .footer-policies a {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+#footer .footer-contactUs ul {
+  display: flex;
+  column-gap: 22px;
+}
+
+#footer .footer-contactUs ul li a svg {
+  color: var(--pink-color);
+  width: 23px;
+  height: 23px;
+}
+
+#footer-madeBy {
+  padding: 10px 0;
+  text-align: center;
+  color: var(--darkblue-color);
+}
+
+#footer-madeBy span a {
+  color: var(--darkblue-color);
 }
