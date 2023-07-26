@@ -250,10 +250,12 @@ img {
 
 .whyChooseUs-cards::-webkit-scrollbar{
   height: 0.4rem;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .whyChooseUs-cards::-webkit-scrollbar-thumb {
-  background-color: var(--darkblue-color);
+  background-color: var(--lightblue-color);
   border-radius: 20px;
 }
 
