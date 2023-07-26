@@ -24,6 +24,10 @@ body {
   font-family: var(--font-primary);
 }
 
+img {
+  pointer-events: none;
+}
+
 #navbar {
   display: flex;
   flex-wrap: wrap;
@@ -119,19 +123,17 @@ body {
 }
 
 .landing-page-carousel > .carousel-illustrations > .illustration-primary > img{
-  width: 432px;
+  width: 462px;
 }
 
 .landing-page-carousel > .carousel-illustrations > .illustration-secondary > img {
-  width: 200px;
-  height: 200px;
-  opacity: 0.5;
+  width: 230px;
 }
 
 .carousel-illustrations > .illustration-secondary {
   display: flex;
   justify-content: center;
-  column-gap: 130px;
+  column-gap: 140px;
 }
 
 .carousel-illustrations > .illustration-secondary > button {
