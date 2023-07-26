@@ -241,11 +241,20 @@ img {
 .landing-page-whyChooseUs > .whyChooseUs-cards {
   display: flex;
   flex-flow: row nowrap;
-  overflow-x: auto;
+  overflow-x: scroll;
   column-gap: 70px;
   margin: 42px auto 0;
   padding-bottom: 42px;
   width: 80%;
+}
+
+.whyChooseUs-cards::-webkit-scrollbar{
+  height: 0.4rem;
+}
+
+.whyChooseUs-cards::-webkit-scrollbar-thumb {
+  background-color: var(--darkblue-color);
+  border-radius: 20px;
 }
 
 .whyChooseUs-cards > .whyChooseUs-card {
