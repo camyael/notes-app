@@ -25,7 +25,7 @@ const Carousel = () => {
     }
 
     return (
-        <div className='landing-page-carousel'>
+        <section className='landing-page-carousel'>
             <div className='carousel-illustrations'>
                 <div className='illustration-primary'>
                     <img src={selectedIllustration[0]} alt=""/> 
@@ -37,7 +37,7 @@ const Carousel = () => {
                 </div>
             </div>
             <img className='carousel-background' src={vector} alt="vector background"/>
-        </div>
+        </section>
     )
 };
 

@@ -5,7 +5,7 @@ import notes from '../../assets/landing-page/notes.png';
 
 const WhatToDo = () => {
     return (
-        <>
+        <section>
             <div className="landing-page-todo">
                 <div className="todo-titles">
                     <h2 className="todo-title">Un refugio personal para tus notas y tus descubrimientos</h2>
@@ -32,7 +32,7 @@ const WhatToDo = () => {
             <div className='landing-page-divider'>
                 <img src={notes} alt=""/>
             </div>
-        </>
+        </section>
     )
 }
 

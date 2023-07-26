@@ -4,7 +4,7 @@ import recommendation3 from '../../assets/landing-page/recommendation_3.png';
 
 const WhyChooseUs = () => {
     return (
-        <div className="landing-page-whyChooseUs">
+        <section className="landing-page-whyChooseUs">
             <div className="whyChooseUs-titles">
                 <h2>¿Por qué elegir Sunny Thoughts?</h2>
                 <p>Opiniones de nuestros usuarios</p>
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
                 </div>
             </div>
             <p className="whyChooseUs-quotation-marks closing">”</p>
-        </div>
+        </section>
     )
 }
 
