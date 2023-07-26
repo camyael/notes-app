@@ -376,12 +376,15 @@ img {
   margin-bottom: 14px;
 }
 
-#footer .footer-policies a {
+#footer .footer-policies a, #footer .footer-contactUs ul li a svg {
   color: var(--background-color);
+}
+
+#footer .footer-policies a {
   text-decoration: none;
 }
 
-#footer .footer-policies a:hover {
+#footer .footer-policies a:hover, #footer .footer-contactUs ul li a svg:hover {
   color: var(--pink-color);
 }
 
@@ -391,13 +394,8 @@ img {
 }
 
 #footer .footer-contactUs ul li a svg {
-  color: var(--pink-color);
   width: 23px;
   height: 23px;
-}
-
-#footer .footer-contactUs ul li a svg:hover {
-  color: var(--background-color);
 }
 
 #footer-madeBy {
