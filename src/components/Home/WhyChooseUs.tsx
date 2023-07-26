@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
                 <div className="whyChooseUs-card">
                     <div className="whyChooseUs-card-user">
                         <img src={recommendation1} alt="" />
-                        <p className="whyChooseUs-card-name">Valentina</p>
+                        <p className="whyChooseUs-card-name">Valentina López</p>
                     </div>
                     <p className="whyChooseUs-card-recommendation">Esta página de tomar notas es genial. Me encanta lo fácil que es organizar mis ideas y tareas. Además, la interfaz es muy intuitiva. Definitivamente la recomendaría a mis amigos.</p>
                     <p className="whyChooseUs-card-score">★★★★★</p>
@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
                 <div className="whyChooseUs-card">
                     <div className="whyChooseUs-card-user">
                         <img src={recommendation2} alt="" />
-                        <p className="whyChooseUs-card-name">Valentina</p>
+                        <p className="whyChooseUs-card-name">Sebastian Rodríguez</p>
                     </div>
                     <p className="whyChooseUs-card-recommendation">Increíble herramienta para tomar notas. Me ayuda a mantenerme organizado y productivo. La posibilidad de crear diferentes carpetas es muy útil. No puedo imaginar mi vida sin esta página.</p>
                     <p className="whyChooseUs-card-score">★★★★★</p>
@@ -30,15 +30,7 @@ const WhyChooseUs = () => {
                 <div className="whyChooseUs-card">
                     <div className="whyChooseUs-card-user">
                         <img src={recommendation3} alt="" />
-                        <p className="whyChooseUs-card-name">Valentina</p>    
-                    </div>
-                    <p className="whyChooseUs-card-recommendation">Es exactamente lo que necesitaba. Me encanta cómo puedo organizar fácilmente mis ideas y tareas. Es muy intuitiva de usar y me ayuda a mantenerme organizado. ¡Altamente recomendada!</p>
-                    <p className="whyChooseUs-card-score">★★★★★</p>
-                </div>
-                <div className="whyChooseUs-card">
-                    <div className="whyChooseUs-card-user">
-                        <img src={recommendation3} alt="" />
-                        <p className="whyChooseUs-card-name">Valentina</p>    
+                        <p className="whyChooseUs-card-name">Lina Wong</p>    
                     </div>
                     <p className="whyChooseUs-card-recommendation">Es exactamente lo que necesitaba. Me encanta cómo puedo organizar fácilmente mis ideas y tareas. Es muy intuitiva de usar y me ayuda a mantenerme organizado. ¡Altamente recomendada!</p>
                     <p className="whyChooseUs-card-score">★★★★★</p>
