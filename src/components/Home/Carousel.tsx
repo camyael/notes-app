@@ -1,18 +1,39 @@
 import vector from '../../assets/vector_celeste.svg';
 import arrowRight from '../../assets/icons/arrow-right.svg';
-import illustration1 from '../../assets/landing-page/illustration_1.png';
-import illustration2 from '../../assets/landing-page/illustration_2.png';
-import illustration3 from '../../assets/landing-page/illustration_3.png';
+import { useState, useEffect } from 'react';
+
+const illustrations:string[] = [
+    "illustration_1.png",
+    "illustration_2.png",
+    "illustration_3.png"
+]
 
 const Carousel = () => {
+    const [ selectedIllustration, setSelectedIllustration ] = useState<string[]>(illustrations) 
+    const [ index, setIndex ] = useState<number[]>([0, 1, 2])
+
+    useEffect(() => {
+        setSelectedIllustration([illustrations[index[0]], illustrations[index[1]], illustrations[index[2]]])
+    }, [index])
+
+    const handlePrev = () => {
+        const array:number[] = []
+        index.forEach(index => {
+            index === illustrations.length - 1 ? array.push(0) : array.push(index + 1)
+        })
+        setIndex(array)
+    }
+
     return (
         <div className='landing-page-carousel'>
             <div className='carousel-illustrations'>
-                <img className='illustration-primary' src={illustration1} alt=""/>
-                <div>
-                    <img className='illustration-secondary' src={illustration3} alt=""/>
-                    <button type='submit'><img src={arrowRight} alt=""/></button>
-                    <img className='illustration-secondary' src={illustration2} alt=""/>
+                <div className='illustration-primary'>
+                    <img src={selectedIllustration[0]} alt=""/> 
+                </div>
+                <div className='illustration-secondary'>
+                    <img src={selectedIllustration[1]} alt=""/>
+                    <button type='submit' onClick={handlePrev}><img src={arrowRight} alt=""/></button>
+                    <img src={selectedIllustration[2]} alt=""/>
                 </div>
             </div>
             <img className='carousel-background' src={vector} alt="vector background"/>

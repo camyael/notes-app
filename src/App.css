@@ -115,20 +115,26 @@ body {
 }
 
 .landing-page-carousel > .carousel-illustrations > .illustration-primary {
+  min-height: 433px;
+}
+
+.landing-page-carousel > .carousel-illustrations > .illustration-primary > img{
   width: 432px;
 }
 
-.landing-page-carousel > .carousel-illustrations > div > .illustration-secondary {
+.landing-page-carousel > .carousel-illustrations > .illustration-secondary > img {
   width: 200px;
+  height: 200px;
+  opacity: 0.5;
 }
 
-.carousel-illustrations > div {
+.carousel-illustrations > .illustration-secondary {
   display: flex;
   justify-content: center;
   column-gap: 130px;
 }
 
-.carousel-illustrations > div > button {
+.carousel-illustrations > .illustration-secondary > button {
   margin-top: 31px;
   border-radius: 50%;
   width: 54px;
@@ -136,9 +142,10 @@ body {
   background-color: var(--darkblue-color);
   border: none;
   color: var(--pink-color);
+  cursor: pointer;
 }
 
-.carousel-illustrations > div > button > img {
+.carousel-illustrations > .illustration-secondary > button > img {
   width: 34px;
   margin: auto auto;
 }
