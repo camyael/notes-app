@@ -290,7 +290,7 @@ body {
 #landing-page-newsletter {
   margin-top: 284px;
   background-color: var(--lightblue-color);
-  padding: 106px 252px;
+  padding: 106px 0;
   text-align: center;
 }
 
