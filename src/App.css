@@ -34,10 +34,31 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 15px 60px;
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 999;
+}
+
+#navbar.active {
+  padding: 15px 60px 10px;
+  box-shadow: 0px 4px 18px rgba(160, 160, 160, 0.25);
 }
 
 .navbar-logo img {
-  width: 270px;
+  width: 20vw;
+}
+
+.navbar-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: var(--orange-color);
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  color: #cd5f4b;
 }
 
 .navbar-menu a {
@@ -70,7 +91,7 @@ img {
 /* HOME */
 .landing-page-titles {
   margin: 74px auto 37px;
-  width: 898px;
+  width: 60vw;
   text-align: center;
   font-family: var(--font-secondary);
 }
@@ -78,7 +99,7 @@ img {
 .title-landing-page {
   color: var(--darkblue-color);
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .title-landing-page span {
@@ -118,22 +139,18 @@ img {
   width: 100%;
 }
 
-.landing-page-carousel > .carousel-illustrations > .illustration-primary {
-  min-height: 433px;
-}
-
 .landing-page-carousel > .carousel-illustrations > .illustration-primary > img{
-  width: 462px;
+  width: 31vw;
 }
 
 .landing-page-carousel > .carousel-illustrations > .illustration-secondary > img {
-  width: 230px;
+  width: 16vw;
 }
 
 .carousel-illustrations > .illustration-secondary {
   display: flex;
   justify-content: center;
-  column-gap: 140px;
+  column-gap: 10vw;
 }
 
 .carousel-illustrations > .illustration-secondary > button {
@@ -163,7 +180,7 @@ img {
   font-family: var(--font-secondary);
   color: var(--darkblue-color);
   margin: 0 auto;
-  width: 781px;
+  width: 60vw;
 }
 
 .todo-titles > .todo-title, .whyChooseUs-titles > h2 {
@@ -217,6 +234,10 @@ img {
   margin: 161px 0;
 }
 
+#home .landing-page-divider img{
+  width: 55vw;
+}
+
 .landing-page-whyChooseUs {
   position: relative;
 }
@@ -227,15 +248,16 @@ img {
   font-size: 12.5rem;
   color: var(--lightblue-color);
   position: absolute;
+  z-index: -1;
 }
 
 .landing-page-whyChooseUs > .opening {
   top: 0;
-  left: 100px;
+  left: 10vw;
 }
 
 .landing-page-whyChooseUs > .closing { 
-  right: 100px;
+  right: 10vw;
 }
 
 .landing-page-whyChooseUs > .whyChooseUs-cards {
@@ -311,7 +333,7 @@ img {
   font-family: var(--font-secondary);
   color: var(--darkblue-color);
   margin: 0 auto 28px auto;
-  width: 719px;
+  width: 60vw;
 }
 
 #landing-page-newsletter h2 {
@@ -334,7 +356,7 @@ img {
   margin-right: 25px;
   color: #BBBBBB;
   padding: 10px 0 10px 19px;
-  width: 540px;
+  width: 40vw;
 }
 
 #landing-page-newsletter form .newsletter-submit {
@@ -406,4 +428,156 @@ img {
 
 #footer-madeBy span a {
   color: var(--darkblue-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-page-carousel > .carousel-illustrations > .illustration-primary > img {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .landing-page-carousel > .carousel-illustrations > .illustration-primary > img {
+    width: 38.5vw;
+  }
+
+  .title-landing-page {
+    font-size: 3rem;
+  }
+
+  .navbar-logo img {
+    width: 30vw;
+  }
+
+  .navbar-button {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  nav.isActive {
+    background-color: var(--background-color);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 40vh;
+  }
+
+  .landing-page-todo > .todo-cards {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .landing-page-titles {
+    margin: 41px auto 37px;
+  }
+
+  .landing-page-carousel > .carousel-illustrations > .illustration-primary > img {
+    width: 44.5vw;
+  }
+
+  .landing-page-whyChooseUs > .whyChooseUs-quotation-marks {
+    font-size: 9rem;
+  }
+
+  #footer {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #home .landing-page-divider img {
+    width: 90vw;
+  }
+
+  .title-landing-page {
+    font-size: 2.7rem;
+  }
+
+  .todo-titles > .todo-title, .whyChooseUs-titles > h2, #landing-page-newsletter h2 {
+    font-size: 2.2rem;
+  }
+
+  .landing-page-carousel > .carousel-illustrations > .illustration-primary > img {
+    width: 48.5vw;
+  }
+
+  .carousel-illustrations > .illustration-secondary > button {
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-illustrations > .illustration-secondary > button > img {
+    width: 26px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .title-landing-page {
+    font-size: 2.3rem;
+  }
+
+  .todo-titles > .todo-title, .whyChooseUs-titles > h2, #landing-page-newsletter h2 {
+    font-size: 1.6rem;
+  }
+
+  .todo-titles > p, .whyChooseUs-titles > p {
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  .landing-page-carousel > .carousel-illustrations > .illustration-primary > img {
+    width: 54.5vw;
+  }
+
+  .carousel-illustrations > .illustration-secondary {
+    column-gap: 8vw;
+  }
+
+  .todo-titles, .whyChooseUs-titles {
+    padding-top: 60px;
+  }
+
+  .todo-cards > .todo-cards-card > img {
+    width: 50px;
+  }
+
+  .todo-cards > .todo-cards-card {
+    width: 50vw;
+  }
+
+  #landing-page-newsletter form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  #landing-page-newsletter form .newsletter-submit, #landing-page-newsletter form .newsletter-input {
+    margin: 0 auto;
+    width: 80vw;
+    padding: 10px 0 10px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .landing-page-carousel > .carousel-illustrations > .illustration-primary > img {
+    width: 59.5vw;
+  }
 }
