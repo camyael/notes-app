@@ -22,9 +22,7 @@ const Navbar = () => {
 
     return (
         <header id="navbar" className={scroll ? 'active' : ''}>
-            <div className="navbar-logo">
-                <a href="/"><img src={logo} alt="logo"/></a>
-            </div>
+            <a href="/" className="navbar-logo"><img src={logo} alt="logo"/></a>
             <div>
             <button className="navbar-button" onClick={handleOnClick}><BurgerButton/></button>
             <nav className={`navbar-menu ${menu ? 'isActive' : ''}`}>
