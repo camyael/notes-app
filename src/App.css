@@ -532,6 +532,10 @@ img {
     padding: 15px 25px;
   }
 
+  #navbar.active {
+    padding: 15px 25px 10px;
+  }
+
   .navbar-logo img {
     width: 52vw;
   }
