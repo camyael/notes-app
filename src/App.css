@@ -528,6 +528,14 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+  #navbar {
+    padding: 15px 25px;
+  }
+
+  .navbar-logo img {
+    width: 52vw;
+  }
+
   .title-landing-page {
     font-size: 2.3rem;
   }
